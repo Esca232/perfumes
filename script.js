@@ -60,7 +60,7 @@ let cart = JSON.parse(localStorage.getItem("esca_cart")) || [];
 // ========================
 // GOOGLE SHEETS CONFIGURATION
 // ========================
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbynfOF8qAOQRP-1sUp14Me9Mv4yNI7Qx8M1-uD7sONK4bC72Id4PV_fnd3XeasaxlqjrQ/exec';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzvMjgGkG8j-bxu2Hz9FM_EFmUzOkQ2Zbr7NnBWtvNbwMxIU-RSBxK2UdWG5EcyMHuW/exec';
 
 function saveCart() {
     localStorage.setItem("esca_cart", JSON.stringify(cart));
