@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>ESCA - Men Perfumes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>ESCA</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <button id="cart-btn">🛒 Cart (<span id="cart-count">0</span>)</button>
+    </nav>
+</header>
+
+<main>
+    <section class="collection">
+        <h2>Men Perfumes Collection</h2>
+        <div class="products-grid">
+            <div class="perfume-card" data-product="Apex">
+                <img src="men1.jpg.jpeg" alt="Apex">
+                <h3>Apex</h3>
+                <span>Starts from 625 L.E</span>
+            </div>
+            <div class="perfume-card" data-product="Horizon">
+                <img src="men2.jpg.jpeg" alt="Horizon">
+                <h3>Horizon</h3>
+                <span>Starts from 625 L.E</span>
+            </div>
+            <div class="perfume-card" data-product="Crystal Wave">
+                <img src="men3.jpg.jpeg" alt="Crystal Wave">
+                <h3>Crystal Wave</h3>
+                <span>Starts from 625 L.E</span>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>ESCA — Timeless Fragrances | Crafted with elegance © 2025</p>
+</footer>
+
+<!-- MODAL -->
+<div id="productModal" class="modal-overlay">
+    <div class="product-modal">
+        <div class="modal-close" id="closeModalBtn">✕</div>
+        <div class="modal-inner">
+            <div class="modal-image">
+                <img id="modalImg" src="" alt="perfume">
+            </div>
+            <div class="modal-details">
+                <h2 id="modalTitle"></h2>
+                <div class="price-badge" id="modalPriceHint">Select size</div>
+                <div class="size-selector">
+                    <button class="size-btn" id="size50Btn">50 ML — </button>
+                    <button class="size-btn" id="size100Btn">100 ML — </button>
+                </div>
+                <div class="fragrance-notes" id="fragranceNotesBox">
+                    <h4>✨ Fragrance notes</h4>
+                    <p id="notesText">Experience the signature ESCA blend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="cartSidebar" class="cart-sidebar">
+    <div class="cart-header">
+        <h2>Your Cart</h2>
+        <span class="close-cart" id="closeCartSidebarBtn">✕</span>
+    </div>
+    <ul id="cartList"></ul>
+    <div class="cart-total">
+        <span>Total:</span>
+        <span id="cartTotal">0</span>
+        <span>L.E</span>
+    </div>
+    
+    <!-- حقول بيانات العميل -->
+    <div class="customer-info">
+        <h3>📋 Delivery Details</h3>
+        <input type="text" id="customerName" placeholder="Full Name" class="cart-input">
+        <input type="tel" id="customerPhone" placeholder="Phone Number" class="cart-input">
+        <textarea id="customerAddress" placeholder="Full Address (Street, City, Building)" rows="3" class="cart-input"></textarea>
+    </div>
+    
+    <button class="place-order-btn" id="OrderBtn">📲 Place Order  </button>
+</div>
+
+<!-- 1. استدعاء مكتبات فايربيز الأساسية -->
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore-compat.js"></script>
+
+<!-- 2. ربط الفايربيز بمشروعك وتشغيل قاعدة البيانات -->
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyCxBPD-orqHQqcExpM0kJfXnNjss--DFhM",
+    authDomain: "esca-d3e5d.firebaseapp.com",
+    projectId: "esca-d3e5d",
+    storageBucket: "esca-d3e5d.firebasestorage.app",
+    messagingSenderId: "375569449165",
+    appId: "1:375569449165:web:48f9afd018ecf5d6ca2984",
+    measurementId: "G-6FMXDCWFWV"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  var db = firebase.firestore();
+</script>
+
+<!-- 3. ملف الكود بتاعك العادي جداً -->
+<script src="script.js"></script>
+</body>
+</html>
