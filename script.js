@@ -19,6 +19,27 @@ const productsDB = {
         price100: 899,
         notes: " Horizon insperd by LV\n🌿 TOP NOTES:\n• Calabrian Bergamot\n• Sicilian Citron\n• Orange\n\n🌸 HEART NOTES:\n• Nigerian Ginger\n• Tunisian Neroli\n• Black Tea\n\n🪵 BASE NOTES:\n• Ambroxan\n• Ambrette Seeds\n• Cedarwood\n\n✨ A royal, woody fragrance that commands attention. Perfect for the confident gentleman who appreciates luxury and sophistication."
     },
+    "Tropic": {
+    img: "tropic.jpg",
+    price50: 625,
+    price100: 899,
+    notes: "🌿 TOP NOTES:
+• Bergamot
+• Grapefruit
+• Pineapple
+
+🌸 HEART NOTES:
+• Patchouli
+• Jasmine
+• cedarwood
+
+🪵 BASE NOTES:
+• oakmoss
+• Clearwood
+• Woody notes
+
+✨ A vibrant and sunny fragrance with a warm tropical twist. Perfect for summer days and uplifting moments."
+},
     "Crystal Wave": {
         img: "men3.jpg.jpeg",
         price50: 625,
